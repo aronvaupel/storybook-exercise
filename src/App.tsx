@@ -1,6 +1,6 @@
 import * as React from "react";
 import { ChakraProvider, Box, Grid, theme } from "@chakra-ui/react";
-import Contact from "./components/ContactForm";
+import Contact from "./components/ContactForm/ContactForm";
 
 export const App = () => (
   <ChakraProvider theme={theme}>

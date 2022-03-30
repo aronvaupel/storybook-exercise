@@ -18,8 +18,13 @@ import {
 } from "@chakra-ui/react";
 import { MdPhone, MdEmail, MdLocationOn } from "react-icons/md";
 import { BsPerson } from "react-icons/bs";
+import { ReactChild } from "react";
 
-export default function Contact() {
+export type ContactFormProps = {
+  children: ReactChild;
+};
+
+export default function ContactForm({ ...props }) {
   return (
     <Container bg="#9DC4FB" maxW="full" mt={0} centerContent overflow="hidden">
       <Flex>
